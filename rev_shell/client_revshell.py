@@ -4,7 +4,7 @@ import subprocess
 import sys
 
 #... please don't call me back
-my_ip="10.110.156.67"
+my_ip=""
 
 # Server to call to
 server_host = my_ip
