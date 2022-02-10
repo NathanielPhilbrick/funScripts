@@ -1,2 +1,0 @@
-~~STRING python intruder 10.110.156.67
-~~ENTER
