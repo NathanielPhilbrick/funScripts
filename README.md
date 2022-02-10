@@ -1,8 +1,12 @@
 # funScripts
-Messing around
+Messing around and getting used to git!
 
 1: Reverse shell written in python for circuitPython picoducky
-Requires: ...python v? (on both client and server machine)
+Requires: 
+
+- ...python v? (on both client and server machine)
+
+- raspberry pi pico with the picoducky project installed (https://github.com/dbisu/pico-ducky)
 
   Steps:
   
